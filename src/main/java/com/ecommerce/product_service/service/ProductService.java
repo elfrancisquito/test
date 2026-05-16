@@ -34,10 +34,7 @@ public class ProductService {
                 .stream()
                 .map(this::toResponse)
                 .toList();
-        // System
     }
-
-    // Additional methods for updating and deleting products can be added here
 
     private ProductResponse toResponse(Product product) {
         return new ProductResponse(

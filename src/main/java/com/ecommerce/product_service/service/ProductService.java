@@ -25,7 +25,7 @@ public class ProductService {
                 .build();
 
         Product saved = productRepository.save(product);
-        log.info("Product 1 created with id: {}", saved.getId());
+        log.info("Product created 263512673512 with id: {}", saved.getId());
         return toResponse(saved);
     }
 

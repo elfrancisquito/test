@@ -29,12 +29,6 @@ public class ProductService {
         return toResponse(saved);
     }
 
-    public List<ProductResponse> getAllProducts() {
-        return productRepository.findAll()
-                .stream()
-                .map(this::toResponse)
-                .toList();
-    }
 
     private ProductResponse toResponse(Product product) {
         return new ProductResponse(
